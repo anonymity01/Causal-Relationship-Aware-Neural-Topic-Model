@@ -1,0 +1,1 @@
+--adam_beta1 0.9 --adam_beta2 0.999 --learning_rate 0.001 --dir_prior 0.01 --warm_up_period 100 --B 10 --nocorrection --n_topic 20 --data_dir example_dataset/ --output_dir results/ --z2_dim 128
