@@ -413,7 +413,7 @@ def _h_A(A, m):
     return h_A
 
 def kl_normal(qm, qv, pm, pv):
-  kl = 0.5 * tf.reduce_sum(tf.square(qm - pm), axis=1)
+  kl = 0.5 * tf.reduce_sum(tf.log(pv) - tf.log(qv) + qv / pv + tf.square(qm - pm) / pv - 1, axis=1)
   return kl
   
 """
